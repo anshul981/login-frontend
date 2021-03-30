@@ -11,7 +11,7 @@ export class AuthService {
 
 private userSubject: BehaviorSubject<User>;
 public user: Observable<User>;  
-apiURL = 'http://localhost:3000';
+apiURL = 'https://login-backendapp.herokuapp.com';
 handleError: any;
   constructor(private http: HttpClient) { 
     this.userSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('user')));
